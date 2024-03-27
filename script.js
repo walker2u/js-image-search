@@ -10,10 +10,22 @@ let allCards = '';
 
 ser_btn.addEventListener('click', () => {
     let input_data = ser_inp.value;
+    if(input_data === ""){
+        mainCont.innerHTML = `<div class="alert alert-warning w-100 text-center display-4 py-4 m-0" role="alert">
+        Nothing Here!
+      </div>`;
+      return;
+    }
     getImages(page_num,input_data);
 });
 show.addEventListener('click', () => {
     let input_data = ser_inp.value;
+    if(input_data === ""){
+        mainCont.innerHTML = `<div class="alert alert-warning w-100 text-center display-4 py-4 m-0" role="alert">
+        Nothing Here!
+      </div>`;
+      return;
+    }
     page_num++;
     getImages(page_num,input_data);
 });
