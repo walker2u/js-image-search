@@ -15,50 +15,30 @@
 
 <body>
 
-    <div class="jumbotron jumbotron-fluid text-light bg-primary">
+    <div class="jumbotron jumbotron-fluid text-light bg-primary p-sm-4">
         <div class="container">
-            <h1 class="display-4">Image Searchify...</h1>
+            <h1 class="display-4"><a class="text-light" href="/index.html" style="text-decoration: none;">Image Searchify...</a></h1>
             <div class="lead d-flex">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-lg btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                <input id="ser-inp" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="ser-btn" class="btn btn-lg btn-outline-light my-2 my-sm-0" type="submit">Search</button>
             </div>
         </div>
     </div>
 
-    <div class="row justify-content-center">
+    <div id="main" style="width: 100%;" class="row justify-content-center">
         <div class="col-md-4">
             <div class="card mx-auto" style="width: 18rem;">
                 <img class="card-img-top" src="no.png" alt="Card image cap">
                 <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="no.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="no.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
+                    <p class="card-text text-center">Search Something.</p>
                 </div>
             </div>
         </div>
     </div>
 
-
+    <div class="text-center my-4">
+        <button id="show" type="button" class="btn btn-primary btn-lg">Show More</button>
+    </div>
 
 
     <!-- Optional JavaScript -->
